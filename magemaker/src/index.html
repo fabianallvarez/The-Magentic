@@ -8,10 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Monda:wght@700&family=Sono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/descargas.css">
+    <link rel="stylesheet" href="./css/forms.css">
 </head>
 <body>
+
     <nav class="navbar">
         <div class="logo">The Mage<span>ntic</span></div>
         <ul class="navbar-list">
@@ -32,6 +36,7 @@
             </li>
         </ul>
     </nav>
+
     <header class="header">
         <div class="header-overlay"></div>
         <div class="header-content">
@@ -42,7 +47,8 @@
         </p>
         </div>
     </header>
-    <main>
+
+    <main class="container">
         <section id="el-juego">
             <h1>El Juego</h1>
 
@@ -65,7 +71,7 @@
                 o 404 Not Found, hasta la mas temida de las paginas... 500 server Error
             </p>
 
-            <p>
+            <p class="xl">
                 ¿Quieres asumir el reto?
             </p>
         </section>
@@ -78,20 +84,42 @@
                 Elige el que mas te guste y empieza a jugar. 
             </p>
 
-            <ul>
-                <li><a href="#">PC</a></li>
-                <li><a href="#">XBOX</a></li>
-                <li><a href="#">PS4 o PS5</a></li>
-                <li><a href="#">WEB</a></li>
-                <li><a href="#">PEGI16</a></li>
+            <ul class="descargas">
+                <li><a href="#"><img src="./img/Platforms/pc.png" alt="PC"></a></li>
+                <li><a href="#"><img src="./img/Platforms/ps4.png" alt="PS4"></a></li>
+                <li><a href="#"><img src="./img/Platforms/xbox.png" alt="XBOX"></a></li>
+                <li><a href="#"><img src="./img/Platforms/www.png" alt="WEB"></a></li>
+                <li><a href="#"><img src="./img/Platforms/pegi.png" alt="PEGI16"></a></li>
             </ul>
         </section>
 
         <section id="comunidad">
             <h1>Comunidad</h1>
-            <p>
-                Crear formulario para suscripcion
-            </p>
+            <form action="" id="subscribe">
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Quien eres">
+                </p>
+                <p>
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="email" id="email" placeholder="Tu email (no te enviaremos Spam)">
+                </p>
+                <p>
+                    <label for="alias">Alias</label>
+                    <input type="text" name="alias" id="alias" placeholder="¿Tienes un alias para el juego?">
+                </p>
+                <p>
+                    <input type="checkbox" name="boletin" id="boletin">
+                    <label for="boletin">¿Quieres suscribirte a nuestro boletin de novedades?</label>
+                </p>
+                <p>
+                    <label for="bio">Sobre ti:</label>
+                    <textarea name="bio" id="from-bio" cols="30" rows="10" placeholder="Cuentanos algo sobre tu vida"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
         </section>
 
         <section id="galeria">
@@ -109,6 +137,7 @@
         </section>
 
     </main>
+
     <footer>
         <aside>
             <p>Enlaces de interes:</p>

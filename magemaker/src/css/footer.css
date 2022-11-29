@@ -1,0 +1,16 @@
+.footer {
+    background-color: var(--bg-footer);
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.lista-enlaces, .redes-sociales {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.enlaces p {
+    display: none;
+}

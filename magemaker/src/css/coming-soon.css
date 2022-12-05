@@ -17,7 +17,6 @@ body {
 
 .tag {
     position: absolute;
-    background-color: black;
     width: 11.75rem;
     height: 7.5rem;
     z-index: -1;
@@ -69,6 +68,30 @@ body {
 #subscribe-form .email {
     margin-right: 1rem;
     width: 60%;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/simple-pattern-overlay.png) top left repeat;
+    z-index: -2;
 }
 
 @media (min-width: 480px) {
